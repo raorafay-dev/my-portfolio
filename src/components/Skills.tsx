@@ -33,45 +33,48 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="section-padding bg-secondary">
-      <div className="max-w-6xl mx-auto container-padding">
-        <div className="lg:text-center mb-12">
+    <section id="skills" className="bg-secondary" style={{ paddingTop: '1rem', paddingBottom: '2rem' }}>
+      <div className="max-w-6xl mx-auto" style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
+        <div className="text-center mb-12">
           <h2 className="text-lg font-semibold tracking-wide uppercase">Skills</h2>
           <p className="mt-2 text-3xl sm:text-4xl md:text-5xl leading-8 font-extrabold tracking-tight text-accent">
             My Expertise
           </p>
         </div>
         <div className="mt-10">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-primary-foreground p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-medium text-primary mb-4">Languages</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Languages Section */}
+            <div className="bg-primary-foreground p-6 rounded-lg shadow-md flex flex-col items-center">
+              <h3 className="text-xl font-medium text-primary mb-4 text-center">Languages</h3>
               <div className="space-y-2">
                 {skills.languages.map((skill, index) => (
-                  <div key={index} className="flex items-center">
-                    <Image src={skill.icon} alt={`${skill.name} Icon`} width={20} height={20} className="mr-2" />
-                    <span className="text-primary text-lg">{skill.name}</span>
+                  <div key={index} className="flex items-center justify-center">
+                    <Image src={skill.icon} alt={`${skill.name} Icon`} width={24} height={24} className="mr-2" />
+                    <span className="text-primary text-lg text-center">{skill.name}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-primary-foreground p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-medium text-primary mb-4">Frameworks & Tools</h3>
+            {/* Frameworks and Tools Section */}
+            <div className="bg-primary-foreground p-6 rounded-lg shadow-md flex flex-col items-center">
+              <h3 className="text-xl font-medium text-primary mb-4 text-center">Frameworks & Tools</h3>
               <div className="space-y-2">
                 {skills.frameworksAndTools.map((skill, index) => (
-                  <div key={index} className="flex items-center">
-                    <Image src={skill.icon} alt={`${skill.name} Icon`} width={20} height={20} className="mr-2" />
-                    <span className="text-primary text-lg">{skill.name}</span>
+                  <div key={index} className="flex items-center justify-center">
+                    <Image src={skill.icon} alt={`${skill.name} Icon`} width={24} height={24} className="mr-2" />
+                    <span className="text-primary text-lg text-center">{skill.name}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-primary-foreground p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-medium text-primary mb-4">Soft Skills</h3>
+            {/* Soft Skills Section */}
+            <div className="bg-primary-foreground p-6 rounded-lg shadow-md flex flex-col items-center">
+              <h3 className="text-xl font-medium text-primary mb-4 text-center">Soft Skills</h3>
               <div className="space-y-2">
                 {skills.softSkills.map((skill, index) => (
-                  <div key={index} className="flex items-center">
-                    <Image src={skill.icon} alt={`${skill.name} Icon`} width={20} height={20} className="mr-2" />
-                    <span className="text-primary text-lg">{skill.name}</span>
+                  <div key={index} className="flex items-center justify-center">
+                    <Image src={skill.icon} alt={`${skill.name} Icon`} width={24} height={24} className="mr-2" />
+                    <span className="text-primary text-lg text-center">{skill.name}</span>
                   </div>
                 ))}
               </div>
@@ -80,5 +83,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }
