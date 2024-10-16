@@ -8,13 +8,23 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-export default function Projects() {
-    const [visibleProjects, setVisibleProjects] = useState(2)
-    const [lightboxOpen, setLightboxOpen] = useState(false)
-    const [currentProject, setCurrentProject] = useState(null)
-    const [currentImageIndex, setCurrentImageIndex] = useState(0)
+interface Project {
+    title: string;
+    subtitle: string;
+    description: string;
+    thumbnails: string[];
+    tags: string[];
+    github: string;
+    link: string;
+}
 
-    const projects = [
+export default function Projects() {
+    const [visibleProjects, setVisibleProjects] = useState<number>(2); 
+    const [lightboxOpen, setLightboxOpen] = useState<boolean>(false); 
+    const [currentProject, setCurrentProject] = useState<Project | null>(null);
+    const [currentImageIndex, setCurrentImageIndex] = useState<number>(0); 
+
+    const projects: Project[] = [
         {
             title: "BeltSense: Seatbelt Violation Management System",
             subtitle: "Web App",
@@ -120,11 +130,12 @@ export default function Projects() {
         autoplaySpeed: 3000,
     }
 
-    const openLightbox = useCallback((project, index) => {
-        setCurrentProject(project)
-        setCurrentImageIndex(index)
-        setLightboxOpen(true)
-    }, [])
+    const openLightbox = useCallback((project: Project, index: number) => {
+        setCurrentProject(project);
+        setCurrentImageIndex(index);
+        setLightboxOpen(true);
+    }, []);
+    
 
     const closeLightbox = useCallback(() => {
         setLightboxOpen(false)

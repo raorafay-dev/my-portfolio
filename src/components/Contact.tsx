@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="lg:text-center mb-12">
           <h2 className="text-lg font-semibold tracking-wide uppercase">Contact</h2>
           <p className="mt-2 text-3xl sm:text-4xl md:text-5xl leading-8 font-extrabold tracking-tight text-accent">
-            Let's Connect
+            Let&apos;s Connect
           </p>
         </div>
         <div className="mt-10 flex flex-col items-center space-y-8">
@@ -26,7 +26,6 @@ export default function Contact() {
           <a href="https://github.com/raorafay-dev" target="_blank" rel="noopener noreferrer" className="flex items-center text-primary hover:text-accent transition-colors duration-300 text-lg">
             <Github className="h-6 w-6 mr-2" />
             <span>github.com/raorafay-dev</span>
-          
           </a>
         </div>
       </div>
