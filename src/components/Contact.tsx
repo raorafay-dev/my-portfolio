@@ -66,8 +66,10 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto container-padding relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-sm font-bold tracking-widest uppercase text-blue-400 mb-2">Contact</h2>
-          <h3 className="text-4xl md:text-5xl font-black text-white mb-4">Let's Connect</h3>
-          <p className="text-lg text-white/80">Open to SAP development opportunities and collaborations</p>
+          <h3 className="text-4xl md:text-5xl font-black text-white mb-4">{"Let's Connect"}</h3>
+          <p className="text-lg text-white/80">
+            Open to SAP development opportunities and collaborations
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">

@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 interface HeroProps {
   scrollToSection: (sectionId: string) => void
 }
