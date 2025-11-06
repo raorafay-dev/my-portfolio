@@ -20,7 +20,7 @@ export default function Projects() {
 
   const projects: Project[] = [
     {
-      title: "Sensys – SAP Integration for Maintenance and Inventory",
+      title: "CMMS – SAP Integration for Maintenance and Inventory",
       subtitle: "SAP Integration Project",
       description:
         "Built custom APIs in ABAP for real-time bidirectional data sync between SAP and Sensys CMMS. Executed field/object mapping across PM and MM modules, converting business logic into technical specs. Delivered proof of concept (POC) for MM, ensuring master and transactional data flow.",
@@ -30,7 +30,7 @@ export default function Projects() {
       link: "https://github.com/raorafay-dev",
     },
     {
-      title: "Tekst – SAP SD Integration with ECC and S/4HANA",
+      title: "SAAS – SAP SD Integration with ECC and S/4HANA",
       subtitle: "Sales & Distribution Integration Project",
       description:
         "Developed ODATA APIs for sales order creation, update, and deletion using API_SALES_ORDER_SRV. Implemented CSRF token security and date format handling for OData V2. Managed master and transactional data flow across sales organization, distribution channels, and partner functions with real-time synchronization.",
